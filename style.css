@@ -1045,15 +1045,7 @@ font-size: 25px;
     z-index: 1002;
   }
 
-@media (max-width: 600px){
 
-  /* show hamburger/close icons */
-  nav .fas{
-    display:block;
-    font-size:25px;
-    cursor:pointer;
-    z-index:1002;
-  }
 
   /* IMPORTANT: place menu under the navbar, not full-screen */
   .navbar{
