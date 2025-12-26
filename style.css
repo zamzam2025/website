@@ -1086,6 +1086,9 @@ font-size: 25px;
 }
 
 
+body.menu-open{
+  overflow: hidden;
+}
 
 
 
