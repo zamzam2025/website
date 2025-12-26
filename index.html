@@ -404,7 +404,7 @@
 
 
 
-<script>
+<!-- <script>
   var sidemenu = document.getElementById("sidemenu");
 
   function openmenu(){
@@ -416,7 +416,22 @@
     sidemenu.style.transform = "translateX(100%)";
     document.body.classList.remove("menu-open");
   }
+</script> -->
+
+    <script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu() {
+    sidemenu.classList.add("open");
+    document.body.classList.add("menu-open");
+  }
+
+  function closemenu() {
+    sidemenu.classList.remove("open");
+    document.body.classList.remove("menu-open");
+  }
 </script>
+
 
     
 
