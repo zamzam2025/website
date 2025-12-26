@@ -948,7 +948,7 @@ button.is-loading .btn-text {
 
 /*..............css for small screens ..............   */
 
-nav .fas {
+/* nav .fas {
 display: none;
 }
 
@@ -1023,6 +1023,62 @@ font-size: 25px;
     flex-basis: 100%;
 }
 
+} */
+
+/* Hide icons on desktop */
+nav .fas { display: none; }
+
+@media (max-width: 600px) {
+
+  /* Show hamburger + close icon on mobile */
+  nav .fas {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  /* Make the sidebar a vertical list (override desktop flex) */
+  .navbar #sidemenu{
+    position: fixed;
+    top: 0;
+    right: -260px;              /* keep it fully off screen */
+    width: 260px;               /* a bit wider than 200 for readability */
+    max-width: 80vw;            /* prevents overflow on very small phones */
+    height: 100dvh;
+    background: #8cb9fc;
+    padding: 60px 18px 18px;
+    list-style: none;
+
+    display: flex;              /* keep flex, but change direction */
+    flex-direction: column;     /* key fix */
+    gap: 14px;                  /* vertical spacing */
+    
+    overflow-y: auto;           /* scroll if needed */
+    overflow-x: hidden;         /* prevent sideways overflow */
+    z-index: 9999;
+
+    transition: right 0.3s ease;
+  }
+
+  /* Each menu item */
+  .navbar #sidemenu li{
+    margin: 0;                  /* remove the old 20px margin */
+  }
+
+  .navbar #sidemenu li a{
+    display: block;
+    padding: 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  /* Close icon inside the menu */
+  .navbar #sidemenu .fa-circle-xmark{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+  }
 }
 
 
