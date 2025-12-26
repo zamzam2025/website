@@ -1045,61 +1045,75 @@ font-size: 25px;
     z-index: 1002;
   }
 
-  /* Off-canvas menu panel */
-  .navbar #sidemenu {
-    position: fixed;
-    top: 0;
-    right: 0;                 /* stay at the edge */
-    width: min(80vw, 280px);  /* responsive width */
-    height: 100dvh;
+@media (max-width: 600px){
+
+  /* show hamburger/close icons */
+  nav .fas{
+    display:block;
+    font-size:25px;
+    cursor:pointer;
+    z-index:1002;
+  }
+
+  /* IMPORTANT: place menu under the navbar, not full-screen */
+  .navbar{
+    position: relative;
+  }
+
+  .navbar #sidemenu{
+    position: absolute;
+    top: 70px;                 /* same as your navbar height */
+    right: 12px;
+
+    width: min(80vw, 280px);
+    height: auto;              /* <-- key: fits content */
+    max-height: calc(100dvh - 90px); /* safety if many items */
+    overflow-y: auto;
+
     background: #8cb9fc;
-    padding: 70px 20px 20px;
+    border-radius: 14px;
+    padding: 14px 14px 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
 
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 10px;
 
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    /* hidden by default */
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
 
-    transform: translateX(100%);     /* hidden */
-    transition: transform 0.3s ease; /* smooth */
-    will-change: transform;
+    transition: opacity .2s ease, transform .2s ease;
     z-index: 1001;
   }
 
-  /* When open */
-  .navbar #sidemenu.open {
-    transform: translateX(0);
+  .navbar #sidemenu.open{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
-  .navbar #sidemenu li { margin: 0; }
+  .navbar #sidemenu li{ margin:0; }
 
-  .navbar #sidemenu li a {
-    display: block;
-    padding: 10px 8px;
-    font-size: 18px;
+  .navbar #sidemenu li a{
+    display:block;
+    padding:10px 10px;
+    font-size:18px;
   }
 
-  /* Close icon inside panel */
-  .navbar #sidemenu .fa-circle-xmark {
+  /* close icon inside panel */
+  .navbar #sidemenu .fa-circle-xmark{
     position: absolute;
-    top: 18px;
-    right: 18px;
-    font-size: 26px;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
   }
+
+  /* prevent any horizontal overflow */
+  html, body { overflow-x: hidden; }
 }
 
-
-
-  /* optional: avoid horizontal scroll caused by off-canvas panel */
-  body { overflow-x: hidden; }
-}
-
-
-body.menu-open{
-  overflow: hidden;
-}
 
 
 
