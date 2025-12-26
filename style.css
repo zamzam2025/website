@@ -1031,35 +1031,39 @@ font-size: 25px;
 /* ===== Mobile ===== 
 @media (max-width: 600px) {
 
+/* ===== Mobile menu (no overflow) ===== */
+@media (max-width: 600px) {
+
   /* show burger + close icons on mobile */
-  nav .fas {
+  nav .fas{
     display: block;
     font-size: 25px;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 1002;
   }
 
-  /* IMPORTANT: target the real menu id, more specific than .navbar #sidemenu */
+  /* Off-canvas panel */
   .navbar #sidemenu{
     position: fixed;
     top: 0;
-    right: -260px;              /* hidden off-screen */
+    right: 0;                     /* keep it at right edge */
     width: 260px;
-    height: 100vh;
+    height: 100dvh;               /* better on mobile than 100vh */
     background: #8cb9fc;
     padding: 70px 20px 20px;
-    display: flex;              /* override desktop flex, but make it vertical */
+
+    display: flex;
     flex-direction: column;
     gap: 18px;
-    z-index: 1000;
-    transition: right 0.3s ease;
-    overflow-y: auto;           /* avoid overflow if many links */
+
+    z-index: 1001;
+    overflow-y: auto;
+
+    transform: translateX(100%);  /* hidden */
+    transition: transform .3s ease;
   }
 
-  /* each item */
-  .navbar #sidemenu li{
-    margin: 0;
-  }
+  .navbar #sidemenu li{ margin: 0; }
 
   .navbar #sidemenu li a{
     display: block;
@@ -1067,13 +1071,15 @@ font-size: 25px;
     font-size: 18px;
   }
 
-  /* close icon inside the panel */
+  /* close icon inside panel */
   .navbar #sidemenu .fa-circle-xmark{
     position: absolute;
     top: 18px;
     right: 18px;
     font-size: 26px;
   }
+}
+
 
   /* optional: avoid horizontal scroll caused by off-canvas panel */
   body { overflow-x: hidden; }
