@@ -1103,7 +1103,7 @@ font-size: 25px;
   }
 
   /* prevent any horizontal overflow */
-  html, body { overflow-x: hidden; }
+ body { overflow-x: hidden; }
 }
 
 
