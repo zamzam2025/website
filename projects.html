@@ -60,9 +60,22 @@
     </footer>
         
     </div>
-</div>
+   </div>
 <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
+ // Footer year
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // Mobile menu (same behavior as your final index version)
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.classList.add("open");
+      document.body.classList.add("menu-open");
+    }
+    function closemenu() {
+      sidemenu.classList.remove("open");
+      document.body.classList.remove("menu-open");
+    }
 </script>
 
 
