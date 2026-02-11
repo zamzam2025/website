@@ -26,7 +26,7 @@
    {
     "title": "A Simple Chat Assistant",
     "desc": " An n8n AI agent chat assistance for simple chat",
-    "image": "images/IoTprison.jpg",
+    "image": "images/chatAI.jpg",
     "tags": ["n8n", "Open AI API"],
     "links": [
       { "label": "Live", "url": "https://zamzam2030.app.n8n.cloud/webhook/28af1bcb-ea16-47fc-b6ac-7eeb0b14868d/chat", "icon": "fa-arrow-up-right-from-square" }
