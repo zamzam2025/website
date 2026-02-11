@@ -24,12 +24,12 @@
   },
 
    {
-    "title": "Sensor Technology for safeguarding Prison Overcrowding ",
-    "desc": " Research exploring EM devices and data-driven monitoring concepts to support justice systems.",
+    "title": "A Simple Chat Assistant",
+    "desc": " An n8n AI agent chat assistance for simple chat",
     "image": "images/IoTprison.jpg",
-    "tags": ["IoT", "Power BI", "Python"],
+    "tags": ["n8n", "Open AI API"],
     "links": [
-      { "label": "Live", "url": "https://chatmap-production-5c41.up.railway.app/", "icon": "fa-arrow-up-right-from-square" }
+      { "label": "Live", "url": "hhttps://zamzam2030.app.n8n.cloud/webhook/28af1bcb-ea16-47fc-b6ac-7eeb0b14868d/chat", "icon": "fa-arrow-up-right-from-square" }
     ],
     "featured": true
   },
