@@ -501,6 +501,12 @@ columnBlockLayout p {
   padding: 30px 20px;  
 }
 
+.columnBlockLayout p {
+  text-align: left;
+  line-height: 1.6;
+}
+
+
 
 
 /*  ......... Portfolios Projects........... */
