@@ -447,10 +447,10 @@ width: 50px;
   padding: 16px; 
 }
 
-columnBlockLayout p {
+/* columnBlockLayout p {
     text-align: justify;
     text-justify: inter-word; /* optional */
-}
+} */
 
 #h1 .subtitle1 {
     Color: black;
