@@ -507,6 +507,17 @@ width: 50px;
   max-width: 95%;
 }
 
+#Focus p {
+  text-align: left;
+  line-height: 1.7;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
+.columnBlockLayout {
+  text-align: left;
+}
+
 
 
 
