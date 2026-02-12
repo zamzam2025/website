@@ -501,11 +501,11 @@ width: 50px;
   padding: 30px 20px;  
 }
 
-.columnBlockLayout p {
+/* .columnBlockLayout p {
   text-align: left;
   line-height: 1.7;
   max-width: 95%;
-}
+} */
 
 #Focus p {
   text-align: left;
