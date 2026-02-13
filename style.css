@@ -501,22 +501,23 @@ width: 50px;
   padding: 30px 20px;  
 }
 
+.columnBlockLayout h3,
 .columnBlockLayout p {
-  text-align: justify;
-  line-height: 1.7;
-  max-width: 95%;
-} 
-
-#Focus p {
-  text-align: justify;
-  line-height: 1.7;
-  letter-spacing: normal;
-  word-spacing: normal;
+  text-align: left;
 }
 
-/* .columnBlockLayout {
-  text-align: justify;
-} */
+.columnBlockLayout p {
+  line-height: 1.7;
+}
+
+
+.columnBlockLayout p,
+#Focus p {
+  text-align: left;
+}
+
+
+
 
 
 
