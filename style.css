@@ -501,22 +501,22 @@ width: 50px;
   padding: 30px 20px;  
 }
 
-/* .columnBlockLayout p {
-  text-align: left;
+.columnBlockLayout p {
+  text-align: justify;
   line-height: 1.7;
   max-width: 95%;
-} */
+} 
 
 #Focus p {
-  text-align: left;
+  text-align: justify;
   line-height: 1.7;
   letter-spacing: normal;
   word-spacing: normal;
 }
 
-.columnBlockLayout {
-  text-align: left;
-}
+/* .columnBlockLayout {
+  text-align: justify;
+} */
 
 
 
