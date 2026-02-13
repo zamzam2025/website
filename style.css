@@ -424,14 +424,24 @@ width: 50px;
   background: white
 }
 
-.sectionBlockLayout .container {
+/* .sectionBlockLayout .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   max-width: 1200px;
    
+} */
+
+.sectionBlockLayout .container {
+  display: flex;
+  justify-content: center;   /* center instead of space-between */
+  gap: 40px;                 /* control spacing properly */
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
 }
+
 
 .columnBlockLayout {
   flex: 1 1 30%; /* flexible columns, roughly 3 per row */
