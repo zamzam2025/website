@@ -769,9 +769,10 @@ transition: background 0.5s, transform 0.5s;
 
 
 /* ===== YouTube Marquee ===== */
+/* ===== YouTube Marquee ===== */
 .video-marquee {
   padding: 40px 0;
-  background: #2E456B;
+  background: #f7f9fc;
   text-align: center;
 }
 
@@ -783,28 +784,45 @@ transition: background 0.5s, transform 0.5s;
 /* Outer container */
 .marquee {
   overflow: hidden;
-  width: 100%;
+  position: relative;
 }
 
+/* Moving track */
 .marquee-track {
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: scrollLeft 30s linear infinite;
+  animation: scrollLeft 25s linear infinite;
 }
 
+/* Each video */
 .video-card {
-  flex: 0 0 auto; /* prevents shrinking */
-  width: 300px;
+  min-width: 300px;
   height: 170px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .video-card iframe {
   width: 100%;
   height: 100%;
-  border-radius: 12px;
 }
 
+/* Animation */
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover (nice UX) */
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
 
 
 /* Animation */
