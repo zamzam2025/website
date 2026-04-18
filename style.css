@@ -769,7 +769,6 @@ transition: background 0.5s, transform 0.5s;
 
 
 /* ===== YouTube Marquee ===== */
-/* ===== YouTube Marquee ===== */
 .video-marquee {
   padding: 40px 0;
   background: #f7f9fc;
@@ -809,15 +808,6 @@ transition: background 0.5s, transform 0.5s;
   height: 100%;
 }
 
-/* Animation */
-@keyframes scrollLeft {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
 
 /* Pause on hover (nice UX) */
 .marquee:hover .marquee-track {
@@ -840,12 +830,6 @@ transition: background 0.5s, transform 0.5s;
   animation-play-state: paused;
 }
 
-
-animation: scrollLeft 25s linear infinite;
-
-transform: translateX(-50%);
-
-/* animation-direction: reverse; */
 
 
 
