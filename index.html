@@ -440,7 +440,7 @@
 
 
 // Videos script 
-fetch('./videos.json')
+fetch('./video.json')
   .then(response => response.json())
   .then(data => {
     const track = document.getElementById('video-track');
@@ -462,6 +462,10 @@ fetch('./videos.json')
     track.innerHTML += track.innerHTML;
   })
   .catch(error => console.error('Error loading JSON:', error));
+
+  
+
+        
 </script>
 
 
