@@ -462,7 +462,7 @@ width: 50px;
     text-justify: inter-word; /* optional */
 } */
 
-#h1 .subtitle1 {
+.subtitle1 {
     Color: black;
     font-size: 50px;
     font-weight: 600;
