@@ -808,6 +808,20 @@ transition: background 0.5s, transform 0.5s;
   height: 100%;
 }
 
+.video-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.video-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+
+
+
 /* Animation */
 @keyframes scrollLeft {
   from {
