@@ -435,11 +435,18 @@ width: 50px;
 
 .sectionBlockLayout .container {
   display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* .sectionBlockLayout .container {
+  display: flex;
   justify-content: center;   /* center instead of space-between */
   gap: 40px;                 /* control spacing properly */
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1200px; */
 }
 
 
