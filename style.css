@@ -462,6 +462,11 @@ width: 50px;
     text-justify: inter-word; /* optional */
 } */
 
+#Focus {
+  text-align: center;
+}
+
+
 .subtitle1 {
     Color: black;
     font-size: 50px;
