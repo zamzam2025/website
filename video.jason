@@ -1,5 +1,6 @@
 {
   "videos": [
-    { "url": "https://www.youtube.com/embed/dQw4w9WgXcQ" }
+    { "url": "https://www.youtube.com/embed/xxxx" },
+    { "url": "https://www.youtube.com/embed/yyyy" }
   ]
 }
