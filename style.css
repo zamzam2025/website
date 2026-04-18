@@ -783,29 +783,26 @@ transition: background 0.5s, transform 0.5s;
 /* Outer container */
 .marquee {
   overflow: hidden;
-  position: relative;
+  width: 100%;
 }
 
-/* Moving track */
 .marquee-track {
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: scrollLeft 25s linear infinite;
+  animation: scrollLeft 30s linear infinite;
 }
 
-/* Each video */
 .video-card {
-  min-width: 300px;
+  flex: 0 0 auto; /* prevents shrinking */
+  width: 300px;
   height: 170px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .video-card iframe {
   width: 100%;
   height: 100%;
+  border-radius: 12px;
 }
 
 
