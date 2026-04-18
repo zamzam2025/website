@@ -824,7 +824,11 @@ transition: background 0.5s, transform 0.5s;
 }
 
 
+animation: scrollLeft 25s linear infinite;
 
+transform: translateX(-50%);
+
+/* animation-direction: reverse; */
 
 
 
