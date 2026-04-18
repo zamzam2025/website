@@ -1,12 +1,6 @@
 {
   "videos": [
-    {
-      "id": "qF3YO0OXcD0",
-      "title": "My Research Talk"
-    },
-    {
-      "id": "yyyy",
-      "title": "AI Process Mapping Demo"
-    }
+    { "url": "https://www.youtube.com/embed/xxxx" },
+    { "url": "https://www.youtube.com/embed/yyyy" }
   ]
 }
